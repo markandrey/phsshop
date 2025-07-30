@@ -1,0 +1,129 @@
+{
+  // Настройки терминала от PHS
+  "terminal.integrated.cursorStyle": "line", // Устанавливает стиль курсора в терминале (линия, блок или подчеркивание).
+  "terminal.integrated.cursorBlinking": true, // Включает мигание курсора в терминале.
+  "terminal.integrated.cursorWidth": 2, // Определяет ширину курсора (актуально только для стиля "линия").
+  "terminal.integrated.fontSize": 16, // Размер шрифта в терминале.
+  // "terminal.integrated.enableFileLinks": "off", // Отключает автоматическое создание ссылок на файлы в терминале.
+  // "terminal.integrated.scrollback": 50, // Количество строк, хранимых в истории прокрутки терминала.
+
+  // Настройки редактора
+  "editor.minimap.enabled": false, // Отключает мини-карту (миниатюрное представление кода сбоку).
+  "editor.fontSize": 18, // Размер шрифта в редакторе.
+  "editor.find.seedSearchStringFromSelection": "selection", // По умолчанию подставляет выделенный текст в поле поиска.
+  "editor.autoClosingComments": "always", // Всегда автоматически закрывает комментарии.
+  "editor.autoClosingQuotes": "always", // Всегда автоматически закрывает кавычки.
+  "editor.definitionLinkOpensInPeek": true, // Открывает определения в режиме предварительного просмотра, а не в новом окне.
+  "explorer.autoReveal": false, // Отключает автоматическое раскрытие файлов в проводнике.
+  "editor.hover.delay": 1000, // Задержка в миллисекундах перед появлением всплывающих подсказок.
+  "editor.stickyScroll.enabled": false, // Отключает "липкую" прокрутку (фиксированные заголовки функций).
+  "editor.scrollbar.horizontal": "visible", // Всегда отображает горизонтальную полосу прокрутки.
+  "editor.scrollbar.vertical": "visible", // Всегда отображает вертикальную полосу прокрутки.
+  "editor.scrollbar.scrollByPage": true, // Полоса прокрутки перемещается на целую страницу.
+  "editor.selectionHighlight": false, // Отключает подсветку других вхождений выделенного текста.
+  "editor.unicodeHighlight.ambiguousCharacters": false, // Не подсвечивает неоднозначные символы Юникода.
+  "editor.unicodeHighlight.includeStrings": false, // Не подсвечивает символы Юникода в строковых литералах.
+  "search.defaultViewMode": "tree", // Устанавливает режим отображения результатов поиска в виде дерева.
+  "debug.inlineValues": "on", // Показывает значения переменных непосредственно в коде при отладке.
+  "debug.terminal.clearBeforeReusing": true, // Очищает терминал перед его повторным использованием.
+  "debug.autoExpandLazyVariables": "on",
+
+  // Отключение ненужных функций и прочее
+  "editor.accessibilitySupport": "off", // Отключает функции доступности (например, для экранных считывателей).
+  "editor.roundedSelection": false, // Отключает закругленные края выделения.
+  "window.density.editorTabHeight": "compact", // Использует компактные вкладки редактора.
+  // "window.commandCenter": false, // Отключает центр команд в верхней части окна.
+  "explorer.compactFolders": false, // Отключает компактное представление папок в проводнике.
+  "workbench.startupEditor": "none", // Не открывает никакие редакторы при запуске.
+  "workbench.cloudChanges.autoResume": "off", // Отключает автоматическое возобновление облачных изменений.
+  "workbench.cloudChanges.continueOn": "off", // Отключает продолжение облачных изменений.
+  "workbench.enableExperiments": false, // Отключает экспериментальные функции редактора.
+  "workbench.quickOpen.closeOnFocusLost": false, // Не закрывает окно быстрого открытия при потере фокуса.
+
+  // Настройки Git
+  // "git.autoRepositoryDetection": "subFolders", // Автоматически определяет репозитории в подкаталогах.
+
+  // Настройки для Pylance и анализа кода
+  "python.languageServer": "Pylance", // Использует сервер Pylance.
+  "python.analysis.typeCheckingMode": "off", // Отключает строгую проверку типов.
+  "python.analysis.diagnosticMode": "workspace", // Анализирует весь рабочий каталог.
+  "python.analysis.autoSearchPaths": true, // Автоматически ищет пути для модулей.
+  "python.analysis.autoImportCompletions": true, // Включает автодополнение для импортов.
+  "python.analysis.importFormat": "absolute", // Использует абсолютный формат импортов.
+  "python.analysis.completeFunctionParens": true, // Автоматически форматирует строки.
+  "python.analysis.indexing": true, // Включает индексацию для ускорения анализа.
+
+  // Настройки форматирования Python
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter" // Использует Black для форматирования Python.
+  },
+  // Дополнительные настройки
+  "editor.inlineSuggest.showToolbar": "always", // Всегда показывает панель предложений.
+  "terminal.integrated.allowedLinkSchemes": [
+    "file",
+    "http",
+    "https",
+    "mailto",
+    "vscode",
+    "vscode-insiders",
+    "docker-desktop" // Разрешённые схемы ссылок в терминале.
+  ], // Автоматически сохраняет файлы после небольшой задержки.
+  "files.autoSaveDelay": 1000, // Секунда (1000 миллисекунд).
+
+  "git.autoRepositoryDetection": "subFolders",
+  "breadcrumbs.enabled": true,
+
+  "editor.smoothScrolling": true,
+  "editor.formatOnSave": true,
+  "workbench.tree.indent": 18,
+
+  "python.analysis.inlayHints.variableTypes": true,
+  "python.analysis.inlayHints.functionReturnTypes": true,
+  "python.analysis.enablePytestSupport": true,
+  "python.analysis.packageIndexDepths": [
+    {
+      "name": "django",
+      "depth": 3,
+      "includeAllSymbols": true
+    }
+  ],
+
+  "emmet.includeLanguages": {
+    "django-html": "html"
+  },
+  "files.associations": {
+    "**/*.html": "html",
+    "**/templates/*/*.html": "django-html",
+    "**/templates/*/*/*.html": "django-html",
+    "**/templates/*": "django-html",
+    "**/requirements{/**,*}.{txt,in}": "pip-requirements"
+  },
+  "django.snippets.exclude": ["cms", "wagtail"],
+
+  "[django-html]": {
+    "editor.defaultFormatter": "batisteo.vscode-django",
+    "breadcrumbs.showClasses": true,
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": true,
+      "strings": true
+    }
+  },
+
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/static/css",
+      "savePathReplacementPairs": null
+    },
+    {
+      "format": "compressed",
+      "extensionName": ".min.css",
+      "savePath": "/static/css"
+    }
+  ],
+  "liveSassCompile.settings.generateMap": true,
+  "liveSassCompile.settings.autoprefix": ["> 1%", "last 2 versions"],
+  "window.zoomLevel": 1
+}
