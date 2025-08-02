@@ -1,0 +1,42 @@
+.cards
+    grid-column: full
+    background: url('../img/main-foto.webp')
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+    width: 100%
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr))
+    gap: 4rem 6rem
+
+h1
+    color: $color-gray-dark
+    text-align: center
+    margin-top: 5rem
+    font-size: 5rem
+
+.card
+    background-color: $color-gray-light
+    color: $color-green-dark
+    border-radius: 1rem
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.99)
+    &__id
+        margin-block: 2rem
+    &__price
+        font-size: 2rem
+        &_old
+            color: $color-gray-medium
+            text-decoration: line-through
+            margin-right: 1rem
+        &_new
+            font-weight: bold
+    &__button
+        padding: 10px 20px
+        background: #4CAF50
+        color: white
+        border: none
+        border-radius: 5px
+        cursor: pointer
+        font-size: 16px
+        &:hover
+            background: #45a049
